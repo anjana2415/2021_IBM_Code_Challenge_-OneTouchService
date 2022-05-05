@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeScreen">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/Profileimageview"
+            android:layout_width="65dp"
+            android:layout_height="71dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/appicon"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0" />
+        <TextView
+            android:id="@+id/hello"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/green"
+            android:text="HELLO"
+            android:textColorHint="@color/black"
+            android:textSize="36sp"
+            app:layout_constraintVertical_bias="0"
+            app:layout_constraintHorizontal_bias="0"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/Profileimageview"/>
+
+        <EditText
+            android:id="@+id/search"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:elevation="4dp"
+            android:hint="Search"
+            android:paddingLeft="20dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="10dp"
+            android:textSize="14sp"
+            android:textColorHint="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.13"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/hello"
+            app:layout_constraintVertical_bias="0.003"
+            app:layout_constraintWidth_percent=".7" />
+
+        <ImageView
+            android:layout_width="74dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="528dp"
+            android:src="@drawable/ic_baseline_search_24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintStart_toEndOf="@id/search"
+            app:layout_constraintTop_toTopOf="@id/search"
+            app:layout_constraintVertical_bias="0" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_1"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:layout_constraintVertical_bias="0"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/search"
+            />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintVertical_bias="0"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/rv_1"
+            />
+
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+
+</ScrollView>
